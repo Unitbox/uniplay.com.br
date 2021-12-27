@@ -41,34 +41,42 @@ Para instalar o <Mimics_Arcade>, siga estas etapas:
    DB_PASSWORD = 'PASSWORD DATABASE';
    ```
 
-   [Criar aplicativo Facebook](https://developers.facebook.com/?locale=pt_BR)
-
+   [Clique aqui para criar aplicativo Facebook](https://developers.facebook.com/?locale=pt_BR) (https://developers.facebook.com/?locale=pt_BR)
    ```js
    FACEBOOK_CLIENT_ID = '';
    FACEBOOK_CLIENT_SECRET = '';
    FACEBOOK_CLIENT_URL = '';
    ```
 
-   [Criar aplicativo Google](https://developers.google.com/)
+   [Clique aqui para criar aplicativo Google](https://developers.google.com/) (https://developers.google.com/)
    ```js
-   GOOGLE_CLIENT_ID = 'INSERIR O URL DO LOCAL HOST OU DO SERVIDOR REMOTO';
-   GOOGLE_CLIENT_SECRET = 'HOST SERVIDOR DATABASE';
-   GOOGLE_CLIENT_URL = 'PORT SERVIDOR DATABASE';
+   GOOGLE_CLIENT_ID = '';
+   GOOGLE_CLIENT_SECRET = '';
+   GOOGLE_CLIENT_URL = '';
    ```
+
 5. Rodar comando key:generate para gerar a chave base64 no arquivo .env
    ```sh
    key:generate
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">voltar para o topo</a>)</p>
 
 ## ☕ Usando <Mimics_Arcade>
 
 Para usar <Mimics_Arcade>, siga estas etapas:
 
+1. Rodar os comandos abaixo para limpar as configurações;
+
 ```
 php artisan cache:clear
 php artisan config:clear
+php artisan serve
+```
+
+2. Rodar comando para rodar o projeto no navegador localhost;
+
+```
 php artisan serve
 ```
 
